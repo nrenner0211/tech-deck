@@ -1,4 +1,4 @@
-# techDeck
+# tech-deck
 
 ## About
 

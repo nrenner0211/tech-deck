@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nrenner0211/techDeck/issues"
+    "url": "https://github.com/nrenner0211/techeck/issues"
   },
-  "homepage": "https://github.com/nrenner0211/techDeck#readme",
+  "homepage": "https://github.com/nrenner0211/tech-deck#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.4",
@@ -25,6 +25,8 @@
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "path": "^0.12.7",
     "sequelize": "^6.21.3"
   }
 }
