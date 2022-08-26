@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tech-deck</title>
     {{! <base href="/"> }}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
   </head>
 
   <body>
     <div class="wrapper">
-      <header>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
         <h1>
-          <a href="/">tech-deck</a>
+          <a class="title navbar-item" href="/">home</a>
         </h1>
-        <nav>
+
           {{#if loggedIn}}
 
-
-          
-            <a href="/dashboard">dashboard</a>
-            <button id="logout" class="btn-no-style">logout</button>
+            <a class="navbar-item" href="/dashboard">dashboard</a>
+            <button id="logout" class="navbar-item btn-no-style">logout</button>
           {{else}}
-            <a href="/login">login</a>
+            <a class="navbar-item" href="/login">login</a>
           {{/if}}
         </nav>
-      </header>
       <main>
         {{{body}}}
       </main>

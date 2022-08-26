@@ -1,7 +1,6 @@
-<article class="post">
-  <div class="title">
-    <a href="{{post_url}}" target="_blank">{{title}}</a>
-    <span>({{post_url}})</span>
+<article class="section post">
+  <div class="subtitle">
+    {{post_url}}{{title}}
   </div>
   <div class="meta">
     {{vote_count}} point(s) by {{user.username}} on {{created_at}}
@@ -10,7 +9,7 @@
   </div>
 </article>
 
-<form class="comment-form">
+<form class="section comment-form">
   <div>
     <textarea name="comment-body"></textarea>
   </div>
@@ -22,7 +21,7 @@
 </form>
 
 {{#if loggedIn}}
-<form class="comment-form">
+<form class="section comment-form">
   <div>
     <textarea name="comment-body"></textarea>
   </div>

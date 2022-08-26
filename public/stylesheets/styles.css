@@ -1,5 +1,13 @@
 /* stylesheet */
 
+:root {
+  --alice-blue: #E8F1F2;
+  --granny-smith: #B3EFB2;
+  --army-green: #7A9E7E;
+  --jungle-green: #31493C;
+  --rich-black: #001A23;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,39 +16,38 @@ body, html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
-  color: #333;
+  background-color: var(--alice-blue);
+  color: var(--rich-black);
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: var(--jungle-green);
   font-weight: bold;
   transition: color .1s;
 }
 
 a:hover {
-  color: #3486eb;
+  color: var(--rich-black);
 }
 
 button {
-  background-color: #225ca3;
+  font-family: 'Silkscreen', cursive;
+  background-color: var(--army-green);
   border: 0;
   padding: 1%;
-  color: white;
-  font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: var(--granny-smith);
 }
 
 .post-list {
   margin: 0;
-  padding: 0;
+  padding: 10px 0px;
 }
 
 textarea, input {
@@ -60,6 +67,7 @@ textarea {
 }
 
 form > div {
+  padding: 10px;
   margin-bottom: 2%;
 }
 
@@ -76,14 +84,6 @@ form label {
   flex-direction: column;
 }
 
-header {
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1%;
-}
-
 header h1 {
   font-size: 1em;
 }
@@ -91,24 +91,6 @@ header h1 {
 main {
   flex: 1;
   padding: 2% 4%;
-}
-
-.btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  color: #225ca3;
-  font-size: 100%;
-  font-weight: bold;
-  transition: color .1s;
-  margin-left: 16px;
-}
-
-.btn-no-style:hover {
-  background: none;
-  color: #3486eb;
 }
 
 .delete-post-btn {
@@ -125,9 +107,7 @@ main {
 }
 
 .post .title span {
-  font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
 }
 
 .edit-link {
@@ -163,7 +143,12 @@ main {
   opacity: .6;
 }
 
+.new-post-form {
+  padding: 20px;
+}
+
 .new-post-form input {
+  padding: 10px;
   width: 300px;
 }
 
@@ -171,10 +156,20 @@ main {
   margin-bottom: 5%;
 }
 
+header {
+  border-bottom: 2px solid var(--granny-smith);
+}
+
 footer {
-  border-top: 1px solid #ccc;
+  border-top: 2px solid var(--granny-smith);  
+}
+
+header, footer {
+  font-family: 'Silkscreen', cursive;
+  color: var(--alice-blue);
+  background-color: var(--rich-black);
   display: flex;
   justify-content: center;
-  padding: 1%;
-  font-size: 110%;
+  padding: 20px 0px;
+  font-size: larger;
 }
