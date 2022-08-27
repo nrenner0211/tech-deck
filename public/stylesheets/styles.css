@@ -17,7 +17,6 @@ body, html {
   padding: 0;
   margin: 0;
   background-color: var(--alice-blue);
-  color: var(--rich-black);
 }
 
 a {
@@ -28,21 +27,23 @@ a {
 }
 
 a:hover {
-  color: var(--rich-black);
+  color: var(--granny-smith);
+  background-color: var(--rich-black);
 }
 
 button {
   font-family: 'Silkscreen', cursive;
-  background-color: var(--army-green);
-  border: 0;
-  padding: 1%;
-  transition: background-color .1s;
+  color: var(--army-green);
+  background-color: var(--jungle-green);
+  border: solid 1px var(--granny-smith);
+  padding: 2%;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 button:hover {
-  background-color: var(--granny-smith);
+  transition: color .1s;
+  color: var(--granny-smith);
 }
 
 .post-list {
@@ -124,6 +125,35 @@ main {
   background-color: #1f9c13;
 }
 
+.navbar {
+  border-bottom: 3px solid var(--granny-smith);
+  color: var(--alice-blue);
+}
+
+.nav-item {
+  color: var(--jungle-green);
+  padding: 10px;
+}
+
+.nav-item:hover {
+  color: var(--granny-smith);
+
+}
+
+.footer {
+  border-top: 3px solid var(--granny-smith);
+  justify-content: center; 
+}
+
+.navbar, .footer {
+  font-family: 'Silkscreen', cursive;
+  background-color: var(--rich-black);
+  color: var(--alice-blue);
+  display: flex;
+  padding: 5vh;
+  font-size: larger;
+}
+
 .comment-form {
   margin-bottom: 5%;
 }
@@ -156,20 +186,3 @@ main {
   margin-bottom: 5%;
 }
 
-header {
-  border-bottom: 2px solid var(--granny-smith);
-}
-
-footer {
-  border-top: 2px solid var(--granny-smith);  
-}
-
-header, footer {
-  font-family: 'Silkscreen', cursive;
-  color: var(--alice-blue);
-  background-color: var(--rich-black);
-  display: flex;
-  justify-content: center;
-  padding: 20px 0px;
-  font-size: larger;
-}

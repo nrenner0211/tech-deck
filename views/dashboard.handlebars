@@ -4,13 +4,15 @@
 
   <form class="new-post-form">
     <div>
-      <label for="post-title">Title of Blurb</label>
+      <label for="post-title" class="label">Title of Blurb</label>
       <input type="text" id="post-title" name="post-title" />
     </div>
     <div>
-      <label for="post-url">Word Vomit Below:</label>
-      <input id="post-url" name="post-url" />
-    </div>
+      {{!-- <label for="post-url" class="label">Word Vomit Below:</label> --}}
+      <div class="field">
+      <div class="control">
+        <textarea id="post-url" name="post-url" class="textarea is-large" placeholder="Word Vomit Here"></textarea>
+      </div>
     <button type="submit" class="button btn">Create</button>
   </form>
 </section>
@@ -22,7 +24,7 @@
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link button is-light">Edit post</a>
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </li>
     {{/each}}
   </ul>

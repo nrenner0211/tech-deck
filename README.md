@@ -82,6 +82,8 @@ A CMS-style blog site where developers can publish their blog posts. User story 
 
 [Functionality goal](assets/images/14-mvc-homework-demo-01.gif)
 
+I went off the rails styling it, but I had fun! The functionality is still the same.
+
 ## Contact
 
 [![Linkedin Badge](https://img.shields.io/badge/-nrenner0211-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nicolette-renner/)](https://www.linkedin.com/in/nicolette-renner/)
