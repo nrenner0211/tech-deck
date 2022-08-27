@@ -2,13 +2,25 @@
 
 ## About
 
-A CMS-style blog site where developers can publish their blog posts. User story below:
+A CMS-style blog site where developers can publish their blog posts, or "blurbs". User story below:
 
 `AS A developer who writes about tech`
 
-`AS A developer who writes about tech`
+`I WANT a CMS-style blog site`
 
 `SO THAT I can publish articles, blog posts, and my thoughts and opinions`
+
+## Links
+
+[Repository](https://github.com/nrenner0211/tech-deck)
+
+[Deployed](https://young-waters-17600.herokuapp.com/)
+
+## Technology Used
+
+Express.js, MySQL2, Sequelize, Handlebars.js
+
+I used [Bulma](https://bulma.io/) as my CSS framework.
 
 ## Acceptance Criteria
 
@@ -80,9 +92,9 @@ A CMS-style blog site where developers can publish their blog posts. User story 
 
 ## Mock Up
 
-[Functionality goal](assets/images/14-mvc-homework-demo-01.gif)
+![Image](assets/images/14-mvc-homework-demo-01.gif)
 
-I went off the rails styling it, but I had fun! The functionality is still the same.
+It's not perfect, but it's an MVP!
 
 ## Contact
 

@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nrenner0211/techDeck.git"
+    "url": "git+https://github.com/nrenner0211/tech-deck.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nrenner0211/techeck/issues"
+    "url": "https://github.com/nrenner0211/tech-deck/issues"
   },
   "homepage": "https://github.com/nrenner0211/tech-deck#readme",
   "dependencies": {
