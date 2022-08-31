@@ -14,9 +14,9 @@
 
 body, html {
   height: 100%;
+  width: 100vw;
   padding: 0;
   margin: 0;
-  background-color: var(--alice-blue);
 }
 
 a {
@@ -28,20 +28,18 @@ a {
 
 a:hover {
   color: var(--granny-smith);
-  background-color: var(--rich-black);
 }
 
-button {
+.button {
   font-family: 'Silkscreen', cursive;
   color: var(--army-green);
   background-color: var(--jungle-green);
-  border: solid 1px var(--granny-smith);
-  padding: 2%;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 25px;
+  padding: 3%;
 }
 
-button:hover {
+.button:hover {
   transition: color .1s;
   color: var(--granny-smith);
 }
@@ -76,15 +74,6 @@ form label {
   display: block;
 }
 
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
 header h1 {
   font-size: 1em;
 }
@@ -93,6 +82,17 @@ main {
   flex: 1;
   padding: 2% 4%;
 }
+
+.wrapper {
+  width: 100vh;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 .delete-post-btn {
   background-color: #d41414;
@@ -123,11 +123,6 @@ main {
 
 .upvote-btn:hover {
   background-color: #1f9c13;
-}
-
-.navbar {
-  border-bottom: 3px solid var(--granny-smith);
-  color: var(--alice-blue);
 }
 
 .nav-item {
@@ -171,6 +166,11 @@ main {
   font-size: 90%;
   margin-bottom: .5%;
   opacity: .6;
+}
+
+.hero {
+  background-color: var(--rich-black);
+  border-bottom: 3px solid var(--granny-smith);
 }
 
 .new-post-form {
