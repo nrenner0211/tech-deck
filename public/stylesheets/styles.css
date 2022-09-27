@@ -92,8 +92,6 @@ main {
   flex-direction: column;
 }
 
-
-
 .delete-post-btn {
   background-color: #d41414;
 }
@@ -168,11 +166,6 @@ main {
   opacity: .6;
 }
 
-.hero {
-  background-color: var(--rich-black);
-  border-bottom: 3px solid var(--granny-smith);
-}
-
 .new-post-form {
   padding: 20px;
 }
@@ -186,3 +179,7 @@ main {
   margin-bottom: 5%;
 }
 
+#hero {
+  background-color: var(--rich-black);
+  border-bottom: 3px solid var(--granny-smith);
+}
